@@ -1,14 +1,11 @@
 from telethon import TelegramClient, events
 
-# Официальные ключи Telegram Android (не требуют создания на my.telegram.org)
 API_ID = 6
 API_HASH = 'eb066100c6f1400f40b77786cb15fb16'
 
-# Укажите числовой ID группы и ID (или @username) участника
-TARGET_CHAT = -1001234567890  # Замените на числовой ID группы
-TARGET_USER = 987654321       # Замените на числовой ID или '@username'
+TARGET_CHAT = -1001234567890
+TARGET_USER = 987654321
 
-# Настройка клиента под официальное приложение
 client = TelegramClient(
     'my_session',
     api_id=API_ID,
